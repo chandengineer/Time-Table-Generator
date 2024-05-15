@@ -1,0 +1,10 @@
+const express= require("express");
+const admin  = require("../controllers/admin-controller");
+const middleware=require("../middleware/auth-middleware");
+const router= express.Router();
+router.route("/users").get(admin.getallusers);
+//router.route("/contact").get(admin.getallcontact);
+router.route("/users/delete/:id").delete(admin.deleteuser);
+router.route("/users/:id").get(admin.getusersbyid);
+//router.route("users/update/:id").patch(admin.updateuserbyid);
+module.exports=router;

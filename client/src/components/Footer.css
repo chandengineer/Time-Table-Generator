@@ -1,0 +1,8 @@
+footer{
+    background-color: rgb(107, 23, 242);
+    max-width: 200rem;
+    padding: 4rem 4rem;
+    display: block;
+    margin-top: auto;
+    text-align: center;
+}
